@@ -1,0 +1,23 @@
+{
+  "name": "backend-project-lvl1",
+  "version": "1.0.0",
+  "description": "BrainGames from Hexlet",
+  "main": "src/index.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxphantom/backend-project-lvl1.git"
+  },
+  "author": "Dmitriy Gerasimov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xxphantom/backend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/xxphantom/backend-project-lvl1#readme",
+  "type": "module"
+}
