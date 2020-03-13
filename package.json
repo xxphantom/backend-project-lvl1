@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "BrainGames from Hexlet",
   "main": "src/index.js",
+  "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js"
   },
@@ -19,5 +20,7 @@
     "url": "https://github.com/xxphantom/backend-project-lvl1/issues"
   },
   "homepage": "https://github.com/xxphantom/backend-project-lvl1#readme",
-  "type": "module"
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
