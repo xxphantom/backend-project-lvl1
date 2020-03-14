@@ -1,1 +1,2 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/366a2ea694eb5f9afaab/maintainability)](https://codeclimate.com/github/xxphantom/backend-project-lvl1/maintainability)
+![Lint](https://github.com/xxphantom/backend-project-lvl1/workflows/Lint/badge.svg)
