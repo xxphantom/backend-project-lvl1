@@ -6,3 +6,5 @@ publish:
 	npm publish --dry-run
 lint:
 	npx eslint .
+ls:
+	npm ls --depth 0
