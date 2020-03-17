@@ -1,13 +1,13 @@
-import { gameFlow } from '../index.js';
+import { gameFlow, random } from '../index.js';
 
 export default () => {
   const getGameParam = () => {
     const mathSimbols = ['*', '+', '-'];
     const gameTask = 'What is the result of the expression?';
-    const randomIndex = Math.floor(0 + Math.random() * 3);
+    const randomIndex = random(0, 3);
     const mathSimbol = mathSimbols[randomIndex];
-    const number1 = Math.round(Math.random() * 100);
-    const number2 = Math.round(Math.random() * 100);
+    const number1 = random(0, 100);
+    const number2 = random(0, 100);
     const question = `${number1} ${mathSimbol} ${number2} `;
 
     let answer = '';

@@ -5,6 +5,8 @@ const getUserInput = () => {
   return userAnswer;
 };
 
+export const random = (min, max) => Math.floor(min + Math.random() * max);
+
 let userName = '';
 export const greetings = () => {
   console.log('Welcome to the Brain Games\nMay I have your name?');
