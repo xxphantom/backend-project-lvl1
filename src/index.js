@@ -29,7 +29,7 @@ export const gameFlow = (getGameParam) => {
     console.log(`Question: ${question}`);
     const userAnswer = getUserInput().toLowerCase();
     console.log(`Your answer: ${userAnswer}`);
-    const isCorrect = correctAnswer === userAnswer;
+    const isCorrect = correctAnswer.toString() === userAnswer;
 
 
     if (isCorrect) {
