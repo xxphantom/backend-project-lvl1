@@ -1,4 +1,4 @@
-import { gameFlow, random } from '../index.js';
+import { runGameFlow, random } from '../index.js';
 
 const gcd = (a, b) => {
   if (b === 0) {
@@ -18,5 +18,5 @@ export default () => {
     return [gameTask, question, answer];
   };
 
-  gameFlow(getGameParam);
+  runGameFlow(getGameParam);
 };

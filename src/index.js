@@ -7,16 +7,17 @@ export const printGreetings = () => {
   console.log(`Hello, ${userName}!`);
 };
 
-export const gameFlow = (getGameParam) => {
-  const [gameTask] = getGameParam();
-
+export const runGameFlow = (getGameParam) => {
+  const maxNumberRounds = 3;
   printGreetings();
+
+  const [gameTask] = getGameParam();
   console.log(gameTask);
 
-  const iter = (times) => {
-    if (times === 0) return;
-    const [, question, correctAnswer] = getGameParam();
+  const iter = (rounds) => {
+    if (rounds === 0) return;
 
+    const [, question, correctAnswer] = getGameParam();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
@@ -27,7 +28,8 @@ export const gameFlow = (getGameParam) => {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer ${correctAnswer}.`);
       console.log(`Let's try again, ${userName}!`);
     }
-    iter(times - 1);
+    iter(rounds - 1);
   };
-  iter(3);
+
+  iter(maxNumberRounds);
 };
