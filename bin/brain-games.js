@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { printGreetings } from '../src/index.js';
+import welcome from '../src/welcome.js';
 
-printGreetings();
+welcome();

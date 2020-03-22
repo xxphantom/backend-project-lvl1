@@ -7,7 +7,7 @@ export default () => {
     const randomIndex = random(0, 9);
     const numbers = Array(10).fill('').map((num, i) => randomStep * (i + 1));
 
-    const answer = numbers[randomIndex].toString();
+    const answer = numbers[randomIndex];
     numbers[randomIndex] = '..';
     const question = numbers.join(' ');
 
