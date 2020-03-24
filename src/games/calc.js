@@ -22,7 +22,7 @@ export default () => {
         answer = (parseInt(number1, 10) + parseInt(number2, 10)).toString();
         break;
       default:
-        throw console.error('Incorrect mathSimbols');
+        throw new Error('Incorrect mathSimbols');
     }
 
     return [gameTask, question, answer];
