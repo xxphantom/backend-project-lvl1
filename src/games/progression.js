@@ -12,7 +12,7 @@ const getGameParam = () => {
   numbers[randomIndex] = '..';
   const question = numbers.join(' ');
 
-  return [gameTask, question, answer];
+  return [question, answer];
 };
 
 export default () => {
