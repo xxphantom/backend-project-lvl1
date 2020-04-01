@@ -1,22 +1,24 @@
-import { runGameFlow, random } from '../index.js';
+import runGameFlow from '../index.js';
+import random from '../utils.js';
 
-const gcd = (a, b) => {
+const gameTask = 'Find the greatest common divisor of given numbers.';
+
+const getGCD = (a, b) => {
   if (b === 0) {
     return (Math.abs(a));
   }
-  return gcd(b, a % b);
+  return getGCD(b, a % b);
+};
+
+const getGameParam = () => {
+  const number1 = random(1, 250);
+  const number2 = random(1, 250);
+  const question = `${number1} ${number2} `;
+  const answer = getGCD(number1, number2).toString();
+
+  return [question, answer];
 };
 
 export default () => {
-  const getGameParam = () => {
-    const gameTask = 'Find the greatest common divisor of given numbers.';
-    const number1 = random(1, 250);
-    const number2 = random(1, 250);
-    const question = `${number1} ${number2} `;
-    const answer = gcd(number1, number2).toString();
-
-    return [gameTask, question, answer];
-  };
-
-  runGameFlow(getGameParam);
+  runGameFlow(gameTask, getGameParam);
 };
