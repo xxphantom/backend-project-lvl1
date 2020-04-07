@@ -7,7 +7,7 @@ const getGameParam = () => {
   const question = random(0, 100);
   const isEven = question % 2 === 0;
   const answer = isEven ? 'yes' : 'no';
-  return [question, answer];
+  return [question, answer.toString()];
 };
 
 export default () => {

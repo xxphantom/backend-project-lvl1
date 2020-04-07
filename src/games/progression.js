@@ -12,7 +12,7 @@ const getGameParam = () => {
   numbers[randomIndex] = '..';
   const question = numbers.join(' ');
 
-  return [question, answer];
+  return [question, answer.toString()];
 };
 
 export default () => {

@@ -15,7 +15,7 @@ const runGameFlow = (gameTask, getGameParam) => {
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    const isCorrect = correctAnswer.toString() === userAnswer.toLowerCase();
+    const isCorrect = correctAnswer === userAnswer.toLowerCase();
     if (isCorrect) {
       console.log('Correct!');
     } else {

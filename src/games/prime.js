@@ -14,7 +14,7 @@ const getGameParam = () => {
   const question = random(2, 101);
   const answer = isPrime(question) ? 'yes' : 'no';
 
-  return [question, answer];
+  return [question, answer.toString()];
 };
 
 export default () => {

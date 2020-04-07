@@ -16,7 +16,7 @@ const getGameParam = () => {
   const question = `${number1} ${number2} `;
   const answer = getGCD(number1, number2).toString();
 
-  return [question, answer];
+  return [question, answer.toString()];
 };
 
 export default () => {

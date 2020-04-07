@@ -14,19 +14,19 @@ const getGameParam = () => {
   let answer = '';
   switch (mathSimbol) {
     case '*':
-      answer = (number1 * number2).toString();
+      answer = (number1 * number2);
       break;
     case '-':
-      answer = (number1 - number2).toString();
+      answer = (number1 - number2);
       break;
     case '+':
-      answer = (parseInt(number1, 10) + parseInt(number2, 10)).toString();
+      answer = (parseInt(number1, 10) + parseInt(number2, 10));
       break;
     default:
       throw new Error('Incorrect mathSimbols');
   }
 
-  return [question, answer];
+  return [question, answer.toString()];
 };
 
 export default () => {
