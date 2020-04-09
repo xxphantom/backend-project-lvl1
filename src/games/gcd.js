@@ -10,15 +10,15 @@ const getGCD = (a, b) => {
   return getGCD(b, a % b);
 };
 
-const getGameParam = () => {
+const getGameData = () => {
   const number1 = random(1, 250);
   const number2 = random(1, 250);
   const question = `${number1} ${number2} `;
   const answer = getGCD(number1, number2).toString();
 
-  return [question, answer.toString()];
+  return [question, answer];
 };
 
 export default () => {
-  runGameFlow(gameTask, getGameParam);
+  runGameFlow(gameTask, getGameData);
 };
