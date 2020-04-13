@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const maxNumberRounds = 3;
+const maxNumberRound = 3;
 
 const runGameFlow = (gameTask, getGameData) => {
   console.log('Welcome to the Brain Games');
@@ -8,8 +8,8 @@ const runGameFlow = (gameTask, getGameData) => {
   console.log(`Hello, ${userName}!`);
   console.log(gameTask);
 
-  const iter = (rounds) => {
-    if (rounds === 0) {
+  const iter = (round) => {
+    if (round === 0) {
       console.log(`Congratulations, ${userName}!`);
       return;
     }
@@ -26,10 +26,10 @@ const runGameFlow = (gameTask, getGameData) => {
     }
 
     console.log('Correct!');
-    iter(rounds - 1);
+    iter(round - 1);
   };
 
-  iter(maxNumberRounds);
+  iter(maxNumberRound);
 };
 
 export default runGameFlow;
