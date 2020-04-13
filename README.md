@@ -3,5 +3,5 @@
 [![asciicast](https://asciinema.org/a/318104.svg)](https://asciinema.org/a/318104)
 [![asciicast](https://asciinema.org/a/318113.svg)](https://asciinema.org/a/318113)
 [![asciicast](https://asciinema.org/a/318116.svg)](https://asciinema.org/a/318116)
-[![asciicast](https://asciinema.org/a/318117.svg)](https://asciinema.org/a/318117)
+[![asciicast](https://asciinema.org/a/319728.svg)](https://asciinema.org/a/319728)
 [![asciicast](https://asciinema.org/a/318118.svg)](https://asciinema.org/a/318118)
