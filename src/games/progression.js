@@ -6,13 +6,9 @@ const progressionLength = 10;
 const progressionMaxStep = 9;
 const progressionMaxFirstItem = 15;
 
-const generateProgression = (firstItem, step, length) => {
-  const progression = [firstItem];
-  for (let i = 0; i < length - 1; i += 1) {
-    progression.push(progression[i] + step);
-  }
-  return progression;
-};
+const generateProgression = (firstItem, step, length) => Array(length)
+  .fill(null)
+  .map((item, i) => firstItem + (step * i));
 
 const getGameData = () => {
   const step = random(1, progressionMaxStep);
